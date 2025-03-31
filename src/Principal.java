@@ -13,15 +13,22 @@ public class Principal {
         Libro libro2 = new Libro("Entremeses de Cervantes", 1615, autor1);
         Libro libro1 = new Libro("la de Plácida y Vitoriano", 1513, autor2);
 
-        LinkedList<Libro> libros = new LinkedList<>();
-        libros.add(libro1);
-        libros.add(libro2);
+//        LinkedList<Libro> libros = new LinkedList<>();
+//        libros.add(libro1);
+//        libros.add(libro2);
+        LinkedList<Libro> listaDeLibros = new LinkedList<>();
+        listaDeLibros.add(libro1);
+        listaDeLibros.add(libro2);
 
-        for (Libro libro : libros){
-            System.out.println(GREEN + "\nLibro de: " + RESET + libro.getAutor().getNombre_completo());
-            System.out.println("Titulo: " + libro.getTitulo());
-            System.out.println("Año publicacion: " + libro.getAnio_publicacion());
-            System.out.println();
-        }
+        ListaLibros listaLibros = new ListaLibros(listaDeLibros);
+
+
+
+//        for (Libro libro : libros){
+//            System.out.println(GREEN + "\nLibro de: " + RESET + libro.getAutor().getNombre_completo());
+//            System.out.println("Titulo: " + libro.getTitulo());
+//            System.out.println("Año publicacion: " + libro.getAnio_publicacion());
+//            System.out.println();
+//        }
     }
 }
