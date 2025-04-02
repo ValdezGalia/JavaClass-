@@ -16,19 +16,18 @@ public class Principal {
 //        LinkedList<Libro> libros = new LinkedList<>();
 //        libros.add(libro1);
 //        libros.add(libro2);
+
         LinkedList<Libro> listaDeLibros = new LinkedList<>();
-        listaDeLibros.add(libro1);
-        listaDeLibros.add(libro2);
-
         ListaLibros listaLibros = new ListaLibros(listaDeLibros);
+        listaLibros.Agregar(new Libro("Popeye", 2005, new Autor("Popeye", "Alemana")));
+        listaLibros.Agregar(libro1);
+        listaLibros.Agregar(libro2);
+
+        listaLibros.ListarLibros();
+        listaLibros.Actualizar(0, libro1);
+
+        listaLibros.ListarLibros();
 
 
-
-//        for (Libro libro : libros){
-//            System.out.println(GREEN + "\nLibro de: " + RESET + libro.getAutor().getNombre_completo());
-//            System.out.println("Titulo: " + libro.getTitulo());
-//            System.out.println("Año publicacion: " + libro.getAnio_publicacion());
-//            System.out.println();
-//        }
     }
 }
