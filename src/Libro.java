@@ -1,4 +1,6 @@
-public class Libro {
+import java.util.LinkedList;
+
+public class Libro{
     private String titulo;
     private int anio_publicacion;
     private Autor autor;

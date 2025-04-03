@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+
 public class Autor {
     private String nombre_completo;
     private String nacionalidad;
